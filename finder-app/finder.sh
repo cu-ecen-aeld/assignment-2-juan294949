@@ -44,5 +44,6 @@ function getY()
 
 # X:  Is the number of files in the directory and all subdirectories. 
 # Y:  Is the number of matching lines found in respective files. matching lines dictated by SEARCHSTR.
-
-echo "The number of files are $(getX $1 ) and the number of matching lines are $(getY $1 $2) "
+X=$(getX $1 )
+Y=$(getY $1 $2) 
+echo "The number of files are $X and the number of matching lines are $Y"
